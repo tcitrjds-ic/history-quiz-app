@@ -1,0 +1,45 @@
+
+    <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8"><title>歴史クイズ (Localhost:3000)</title>
+        <style>
+            body { background:#2c3e50; color:#fff; font-family:sans-serif; text-align:center; padding:20px; }
+            .container { max_width:800px; margin:0 auto; }
+            .card { background:#34495e; border-radius:10px; padding:20px; margin-bottom:40px; border:2px solid #7f8c8d; }
+            img { width:100%; border-radius:5px; margin-bottom:15px; }
+            h2 { color:#f1c40f; }
+            .choices { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+            button { background:#e67e22; color:#fff; border:none; padding:15px; font-size:16px; cursor:pointer; border-radius:5px; }
+            button:hover { opacity:0.8; }
+            .footer { margin-top: 50px; color: #95a5a6; font-size: 0.8rem; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>🏰 歴史ドット絵クイズ (Port 3000) 🏰</h1>
+    
+        <div class="card">
+            <img src="images/q1.png">
+            <h2>Q1. 1192年、源頼朝が開いた幕府はどこにありましたか？</h2>
+            <div class="choices">
+                <button onclick="alert('残念...')">京都</button><button onclick="alert('正解！')">鎌倉</button><button onclick="alert('残念...')">奈良</button><button onclick="alert('残念...')">江戸</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/q2.png">
+            <h2>Q2. 源義経が兄・頼朝に追われ、最後にたどり着いた場所はどこですか？</h2>
+            <div class="choices">
+                <button onclick="alert('残念...')">太宰府</button><button onclick="alert('正解！')">平泉</button><button onclick="alert('残念...')">壇ノ浦</button><button onclick="alert('残念...')">博多</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/q3.png">
+            <h2>Q3. 元寇の際、モンゴル軍が使用した集団戦法や火器に対して、日本の武士が苦戦した戦いを何といいますか？</h2>
+            <div class="choices">
+                <button onclick="alert('残念...')">応仁の乱</button><button onclick="alert('残念...')">保元の乱</button><button onclick="alert('正解！')">文永の役</button><button onclick="alert('残念...')">壇ノ浦の戦い</button>
+            </div>
+        </div>
+        <div class="footer">Server running at http://localhost:3000</div></div></body></html>
